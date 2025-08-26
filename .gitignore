@@ -1,0 +1,9 @@
+*.log
+*.tmp
+*.swp
+*.backup
+cache/
+*.cache
+*.local
+.DS_Store
+Thumbs.db

@@ -1,0 +1,69 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 5,
+  "margin": "5 5 5 5",
+  "modules-left": ["custom/spotify", "custom/arch"],
+  "modules-center": ["cpu", "clock", "memory"],
+  "modules-right": ["pulseaudio", "network"],
+ "output": [
+    "DP-1", 
+  ],
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": true,
+    "tooltip-format": "CPU:\n{avg_frequency} GHz\n\nИспользование по ядрам:\n{cores}",
+    "interval": 2
+  },
+  "memory": {
+    "format": " {used:0.1f}G",
+    "tooltip": true,
+    "tooltip-format": "Память:\nИспользовано: {used:0.1f}G / {total:0.1f}G\nПроцессы: {swapUsed:0.1f}G (своп)",
+    "interval": 5
+  },
+  "network": {
+    "format": "  {bandwidthDownBits}  {bandwidthUpBits}",
+    "format-alt": "{ifname}",
+    "interval": 1,
+    "tooltip-format": "Connected: {essid} ({signalStrength}%)\nIP: {ipaddr}"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "婢 Muted",
+    "format-icons": {
+      "headphones": "",
+      "default": ["", "", ""]
+    },
+    "tooltip": false
+  },
+  "custom/arch": {
+    "format": " ",
+    "on-click": "fuzzel",
+    "on-click-right": "fuzzel --show-actions",
+    "on-scroll-up": "fuzzel --dmenu",
+    "on-scroll-down": "fuzzel --password"
+  },
+  "custom/ssh_launcher": {
+    "format": "SSH",
+    "on-click": "exec footclient --class=ssh_terminal -e ssh server@192.168.0.150",
+    "tooltip": true
+  },
+  "custom/spotify": {
+    "format": "{}",
+    "exec": "~/.config/waybar/spotify.sh",
+    "return-type": "json",
+    "interval": 2,  // Можно увеличить интервал для экономии ресурсов
+    "signal": 1,  // Добавлено: поддержка сигналов
+    "restart-interval": 5,  // Добавлено: перезапуск каждые 5 секундo
+    "on-click": "playerctl play-pause || spotify",  // Запускает Spotify если не запущен
+    "on-click-right": "playerctl next",
+    "on-double-click": "playerctl previous",
+    "on-click-middle": "spotify",  // Явный запуск Spotify
+    "escape": true
+},
+"clock": {
+    "format": " {:%H:%M}",
+    "tooltip": false
+  },
+}

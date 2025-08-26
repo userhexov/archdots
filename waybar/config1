@@ -1,0 +1,71 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 5,
+  "margin": "5 5 5 5",
+  "modules-left": ["custom/spotify"],
+  "modules-center": ["custom/arch", "cpu", "memory", "pulseaudio", "custom/date", "clock"],
+  "modules-right": ["network"], 
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": true,
+    "tooltip-format": "CPU:\n{avg_frequency} GHz\n\nИспользование по ядрам:\n{cores}",
+    "interval": 2
+  },  
+  "memory": {
+    "format": " {used:0.1f}G",  
+    "tooltip": true,
+    "tooltip-format": "Память:\nИспользовано: {used:0.1f}G / {total:0.1f}G\nПроцессы: {swapUsed:0.1f}G (своп)",
+    "interval": 5
+  },
+  "network": {
+    "format": "  {bandwidthDownBits}  {bandwidthUpBits}",
+    "format-alt": "{ifname}",
+    "interval": 1,
+    "tooltip-format": "Connected: {essid} ({signalStrength}%)\nIP: {ipaddr}"
+},
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "婢 Muted",
+    "format-icons": {
+      "headphones": "",
+      "default": ["", "", ""]
+    },
+    "tooltip": false
+  },
+  "clock": {
+    "format": " {:%H:%M}",
+    "tooltip": false
+  },
+  "custom/arch": {
+    "format": " ",
+    "on-click": "fuzzel",
+    "on-click-right": "fuzzel --show-actions",
+    "on-scroll-up": "fuzzel --dmenu",
+    "on-scroll-down": "fuzzel --password"
+  },
+  "custom/ssh_launcher": {  // Исправлено: ssh_launcer -> ssh_launcher
+    "format": "SSH",
+    "on-click": "exec footclient --class=ssh_terminal -e ssh server@192.168.0.150",
+    "tooltip": true  // Исправлено: true вместо "true"
+  },
+  "custom/spotify": {
+    "format": "{}",  // Исправлено: {as} -> {}
+    "exec": "~/.config/waybar/spotify.py",
+    "return-type": "json",
+    "interval": 1,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-double-click": "playerctl previous",
+    "escape": true
+},   
+"custom/date": {
+        "exec": "~/.config/waybar/scripts/date-module.sh",
+        "interval": 10,
+        "return-type": "json",
+        "format": "{}",
+        "tooltip": true,
+        "on-click": "gnome-calendar"
+    }
+}

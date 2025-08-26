@@ -1,0 +1,99 @@
+/* ~/.config/waybar/style.css */
+window#waybar {
+    background-color: transparent;
+    font-family: "FiraCode Nerd Font", "Font Awesome 6 Free", sans-serif;
+    font-size: 13px;
+}
+
+.modules-center {
+    padding: 0;
+    margin: 0;
+}
+
+#ssh-client {
+    color: #ebcb8b;
+}
+
+#custom-arch {
+    background-color: rgba(46, 52, 64, 0.8);
+    color: #1793d1;
+    font-size: 17px;
+    padding: 0 10px;
+    margin: 0 2px;
+    border-radius: 8px;
+}
+
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#clock {
+    padding: 0 10px;
+    margin: 0 2px;
+    background-color: rgba(46, 52, 64, 0.8);
+    color: #d8dee9;
+    border-radius: 8px;
+}
+
+#cpu {
+    color: #88c0d0;
+}
+
+#memory {
+    color: #81a1c1;
+}
+
+#network {
+    color: #8fbcbb;
+}
+
+#pulseaudio {
+    color: #b48ead;
+}
+
+#clock {
+    color: #ebcb8b;
+}
+/* Spotify Module */
+#custom-spotify {
+    background-color: rgba(46, 52, 64, 0.8);
+    color: #8fbcbb;
+    padding: 0 12px;
+    margin: 0 4px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+/* Состояние ожидания (Spotify не запущен) */
+#custom-spotify.waiting {
+    background-color: rgba(46, 52, 64, 0.8);
+    color: #1db954; /* Зеленый цвет */
+    border-left: 3px solid rgba(29, 185, 84, 0.5);
+    animation: pulse-opacity 2s infinite;
+}
+
+/* Состояние воспроизведения */
+#custom-spotify.playing {
+    background-color: rgba(46, 52, 64, 0.8);
+    color: #1db954;
+    border-left: 3px solid #1db954;
+}
+
+/* Состояние паузы */
+#custom-spotify.paused {
+    background-color: rgba(46, 52, 64, 0.8);
+    color: #8fbcbb;
+}
+
+/* Состояние ошибки */
+#custom-spotify.error {
+    background-color: rgba(46, 52, 64, 0.8);
+    color: #bf616a;
+}
+
+/* Анимация пульсации */
+@keyframes pulse-opacity {
+    0% { opacity: 0.9; }
+    50% { opacity: 0.6; }
+    100% { opacity: 0.9; }
+}
