@@ -9,3 +9,5 @@
 - Fastfetch
 - Fuzzel
 - Specityfi
+
+- базовая настройка основных утилит
