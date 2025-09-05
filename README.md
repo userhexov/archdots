@@ -1,6 +1,7 @@
 # Arch Linux Dotfiles
 
-Конфигурационные файлы для:
+- базовая настройка основных утилит
+
 - Hyprland
 - Hyprpaper  
 - Waybar
@@ -10,4 +11,3 @@
 - Fuzzel
 - Specityfi
 
-- базовая настройка основных утилит
