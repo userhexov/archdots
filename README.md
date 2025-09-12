@@ -7,7 +7,7 @@
 
 Элегантная и минималистичная конфигурация Arch Linux с окружением Hyprland
 
-![Screenshot](https://via.placeholder.com/800x400/161616/FFFFFF/?text=Скриншот+здесь)
+
 
 ## ✨ Особенности
 
