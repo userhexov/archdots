@@ -3,14 +3,12 @@
 
 ![Arch](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 ![Hyprland](https://img.shields.io/badge/Hyprland-4338CA?style=for-the-badge)
-![Wayland](https://img.shields.io/badge/Wayland-000000?style=for-the-badge&logo=wayland&logoColor=white)
 ![Zsh](https://img.shields.io/badge/Shell-Zsh-1E8CBE?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![Kitty](https://img.shields.io/badge/Terminal-Kitty-302D41?style=for-the-badge&logo=windowsterminal&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 > Элегантная, минималистичная и высокопроизводительная конфигурация Arch Linux с окружением Hyprland
 
-![Screenshot](https://via.placeholder.com/800x450/161616/FFFFFF/?text=Скриншот+рабочего+стола+Hyprland)
 
 ## ✨ Особенности
 
