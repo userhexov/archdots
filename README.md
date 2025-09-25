@@ -35,7 +35,7 @@
 
 | Рабочий процесс | Терминал и приложения |
 |-----------------|----------------------|
-| ![Desktop](https://via.placeholder.com/400x250/161616/FFFFFF/?text=Рабочий+стол) | ![Terminal](https://via.placeholder.com/400x250/161616/FFFFFF/?text=Терминал) |
+| ![Desktop](https://drive.google.com/file/d/1bc2qo2_s1OqPCFvzZrPApXOmD0j9Ykk7/view?usp=drivesdk/400x250/161616/FFFFFF/?text=Рабочий+стол) | ![Terminal](https://via.placeholder.com/400x250/161616/FFFFFF/?text=Терминал) |
 
 | Настройки и утилиты | Мультимедиа |
 |---------------------|-------------|
